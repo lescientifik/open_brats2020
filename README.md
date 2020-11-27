@@ -10,7 +10,6 @@ Feel free to use it as a starter for following challenge editions!
 
 <div align="center">
   <img alt="Patient42+51" src="images/resized_combined.gif"/>
-  <p>Example of Whole Slide Image tumor segmentation (black background; blue: normal tissue; pink: neoplastic tissue).</p>
 </div>
 
 <p align="center">
