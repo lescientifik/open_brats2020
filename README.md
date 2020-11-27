@@ -10,10 +10,10 @@ Feel free to use it as a starter for following challenge editions!
 
 <div style="display: flex;">
   <div style="flex: 30%;padding: 5px;">
-  <img alt="Patient42" src="images/patient_42.gif" width=50%>
+  <img alt="Patient42" src="images/resized_patient_42.gif" width=50%>
   </div>
   <div style="flex: 30%;padding: 5px;">
-<img alt="Patient51" src="images/patient_51.gif" width=50%>
+<img alt="Patient51" src="images/resized_patient_51.gif" width=50%>
   </div>
 </div>
 
