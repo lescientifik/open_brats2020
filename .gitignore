@@ -133,3 +133,4 @@ Brats2020_runs
 runs
 preds
 *.html
+.idea
