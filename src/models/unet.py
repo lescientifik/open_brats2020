@@ -3,7 +3,7 @@ import torch
 from torch import nn
 from torch.utils.checkpoint import checkpoint_sequential
 
-from src.models.layers import ConvBnRelu, UBlock, conv1x1, UBlockCbam, CBAM
+from src.models.layers import ConvBnRelu, UBlock, conv1x1, UBlockCbam, CBAM, get_norm_layer
 
 
 class Unet(nn.Module):
@@ -110,7 +110,7 @@ class EquiUnet(Unet):
         super(Unet, self).__init__()
         features = [width * 2 ** i for i in range(4)]
         print(features)
-
+        norm_layer = get_norm_layer(norm_layer)
         self.deep_supervision = deep_supervision
 
         self.encoder1 = UBlock(inplanes, features[0], features[0], norm_layer, dropout=dropout)
@@ -158,7 +158,7 @@ class Att_EquiUnet(Unet):
         super(Unet, self).__init__()
         features = [width * 2 ** i for i in range(4)]
         print(features)
-
+        norm_layer = get_norm_layer(norm_layer)
         self.deep_supervision = deep_supervision
 
         self.encoder1 = UBlockCbam(inplanes, features[0], features[0], norm_layer, dropout=dropout)
