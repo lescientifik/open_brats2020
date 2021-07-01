@@ -21,10 +21,6 @@ Feel free to use it as a starter for following challenge editions!
 in your favorite virtual environment:
 
 ```bash
-git clone https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer
-cd Ranger-Deep-Learning-Optimizer
-pip install -e . 
-cd open_brats2020
 pip install -r requirements.txt
 ```
 
